@@ -3,6 +3,9 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Work Sans', sans-serif;
 }
+.hidden{
+    display: none;
+}
 
 .nav-continer{
     height: 80px;
@@ -83,6 +86,15 @@ padding: 10px 30px;
     align-items: center;
     height: 100vh;
 
+}
+.banner-left-part{
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    width: 900px;
+    height: 100vh;
+    padding-left: 200px;
+    padding-top: 150px;
+    
 }
 
 .banner-titel{
@@ -233,6 +245,8 @@ margin-top: -35px;
     width: 300px;
     height: 350px;
 }
+
+
 .three-img p{
     width: 300px;
     color: #534C64;
@@ -290,23 +304,22 @@ line-height: 30px;
 
 /* five continer */
 .part-five-continer{
-    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    background: #FF42A5;
     height: 720px;
-    margin-top: 200px;
+    margin-top: 150px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 100%;
+   
 }
-.five-text{
-    margin-left: 80px;
 
-}
 .five-text h2{
     color: #FFF;
 font-size: 48px;
 font-weight: 700;
 line-height: 60px;
+padding-left: 100px;
 }
 .five-text p{
     width: 680px;
@@ -314,24 +327,26 @@ line-height: 60px;
 font-size: 18px;
 font-weight: 400;
 line-height: 30px; /* 166.667% */
+padding-left:100px;
 }
 .five-img img{
     width: 800px;
-    height: 720px;
+    height: 100vh;
 }
 .five-text-list{
     display: flex;
     gap: 30px;
+    padding-left: 100px;
 }
 .five-text-list-item{
     color: #FFF;
-font-family: Work Sans;
 font-size: 20px;
 font-style: normal;
 font-weight: 600;
 line-height: 40px; /* 200% */
 }
 .five-btn{
+    
 
 font-size: 20px;
 font-weight: 600;
@@ -341,11 +356,19 @@ background: #FFF;
 border: none;
 margin-top: 40px;
 padding: 10px 30px;
+margin-left: 100px;
 }
+
 /* part six continer */
 .contin{
     display: flex;
     gap: 10px;
+}
+.contin:hover{
+    color: #FF42A5;
+    border: 2px solid #F948B2;
+    border-radius: 20px;
+    padding: 10px 30px;
 }
 .contin img{
     width: 50px;
@@ -435,4 +458,10 @@ font-weight: 500;
 }
 
 
+@media screen and (max-width: 576px) {
+    .nav-continer, .manus-part, .banner-conteiner{
+        flex-direction: column;
+    }
 
+    
+}
